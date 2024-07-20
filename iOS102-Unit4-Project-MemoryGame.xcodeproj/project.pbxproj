@@ -11,6 +11,8 @@
 		EE32F70E2C4B295D005EE938 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32F70D2C4B295D005EE938 /* ContentView.swift */; };
 		EE32F7102C4B295E005EE938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE32F70F2C4B295E005EE938 /* Assets.xcassets */; };
 		EE32F7132C4B295E005EE938 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE32F7122C4B295E005EE938 /* Preview Assets.xcassets */; };
+		EE32F71A2C4B7F55005EE938 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32F7192C4B7F55005EE938 /* CardView.swift */; };
+		EE32F71E2C4B7FAF005EE938 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32F71D2C4B7FAF005EE938 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		EE32F70D2C4B295D005EE938 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EE32F70F2C4B295E005EE938 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE32F7122C4B295E005EE938 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EE32F7192C4B7F55005EE938 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		EE32F71D2C4B7FAF005EE938 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				EE32F70B2C4B295D005EE938 /* iOS102_Unit4_Project_MemoryGameApp.swift */,
 				EE32F70D2C4B295D005EE938 /* ContentView.swift */,
+				EE32F7192C4B7F55005EE938 /* CardView.swift */,
+				EE32F71D2C4B7FAF005EE938 /* Card.swift */,
 				EE32F70F2C4B295E005EE938 /* Assets.xcassets */,
 				EE32F7112C4B295E005EE938 /* Preview Content */,
 			);
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE32F70E2C4B295D005EE938 /* ContentView.swift in Sources */,
+				EE32F71A2C4B7F55005EE938 /* CardView.swift in Sources */,
 				EE32F70C2C4B295D005EE938 /* iOS102_Unit4_Project_MemoryGameApp.swift in Sources */,
+				EE32F71E2C4B7FAF005EE938 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
