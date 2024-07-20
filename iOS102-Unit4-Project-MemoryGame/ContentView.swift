@@ -8,19 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var cards: [Card] = Card.mockedCards
+    
+    let columns = [
+            GridItem(.flexible()),
+            GridItem(.flexible()),
+            GridItem(.flexible())
+        ]
     var body: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: 25.0)
-                .fill(Color.blue.gradient)
-                .shadow(color: .black, radius: 4, x: -2, y: 2)
-            VStack {
-                Text("☀️")
+        ScrollView {
+            LazyVGrid(columns: columns, spacing: 20) {
+                ForEach(0..<cards.count, id: \.self) { index in
+                    CardView(card: cards[index])
+                    CardView(card: cards[index])
+                }
             }
-            .font(.title)
-            .foregroundColor(.white)
             .padding()
         }
-        .aspectRatio(2/3, contentMode: .fit)
+        
+      
     }
 }
 

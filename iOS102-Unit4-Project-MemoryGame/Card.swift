@@ -7,6 +7,14 @@
 
 import Foundation
 
-struct Card {
+struct Card: Equatable, Identifiable {
+    var id: UUID = UUID()
     let content: String
+    
+    static let mockedCards = [Card(content: "☀️"),
+                              Card(content: "🌧️"),
+                              Card(content: "🚘"),
+                              Card(content: "📍"),
+                              Card(content: "🛁")
+                            ]
 }
