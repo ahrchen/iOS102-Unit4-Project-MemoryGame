@@ -17,7 +17,7 @@ struct CardView: View {
                 .fill(Color.blue.gradient)
                 .shadow(color: .black, radius: 4, x: -2, y: 2)
             VStack {
-                Text(card.content)
+                Text(card.isFaceUp ? card.content : "")
             }
             .font(.title)
             .foregroundColor(.white)
