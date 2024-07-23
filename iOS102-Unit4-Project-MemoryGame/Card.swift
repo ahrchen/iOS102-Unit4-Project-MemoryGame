@@ -10,8 +10,8 @@ import Foundation
 struct Card: Equatable, Identifiable {
     var id: UUID = UUID()
     let content: String
-    var isFaceUp:Bool = false
-    
+    var isFaceUp: Bool = false
+    var isMatched: Bool = false
     static let mockedCards = [Card(content: "☀️"),
                               Card(content: "🌧️"),
                               Card(content: "🚘"),

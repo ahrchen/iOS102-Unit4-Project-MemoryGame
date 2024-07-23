@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct iOS102_Unit4_Project_MemoryGameApp: App {
+    @State var matchGame = MatchGame()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(matchGame)
         }
     }
 }

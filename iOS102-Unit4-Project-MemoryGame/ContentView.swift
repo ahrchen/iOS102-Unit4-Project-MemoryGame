@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var cards: [Card] = Card.mockedCards
+    @Environment(MatchGame.self) var matchGame
     
     let columns = [
             GridItem(.flexible()),
@@ -18,9 +18,10 @@ struct ContentView: View {
     var body: some View {
         ScrollView {
             LazyVGrid(columns: columns, spacing: 20) {
-                ForEach(0..<cards.count, id: \.self) { index in
-                    CardView(card: cards[index])
-                    CardView(card: cards[index])
+                ForEach(0 ..<
+                    matchGame.cards.count, id: \.self) { index in
+                    CardView( cardIndex: index)
+                            .environment(matchGame)
                 }
             }
             .padding()
@@ -32,4 +33,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .environment(MatchGame())
 }
