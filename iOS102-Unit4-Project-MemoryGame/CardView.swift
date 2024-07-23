@@ -16,11 +16,9 @@ struct CardView: View {
     
     var body: some View {
         ZStack {
-            RoundedRectangle(cornerRadius: 25.0)
+            RoundedRectangle(cornerRadius: 20.0)
                 .fill(matchGame.cards[cardIndex].isFaceUp ? Color.white.gradient : Color.blue.gradient)
-                .shadow(color: .black, radius: 4, x: -2, y: 2)
-                .border(.black, width: 2.0)
-                .clipShape(.rect(cornerRadius: 15.0))
+                .shadow(color: .black, radius: 2, x: -2, y: 2)
                 .opacity(matchGame.cards[cardIndex].isMatched ? 0 : 1)
             
             VStack {

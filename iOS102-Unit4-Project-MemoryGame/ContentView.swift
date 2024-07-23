@@ -24,7 +24,15 @@ struct ContentView: View {
                             .environment(matchGame)
                 }
             }
-            .padding()
+            .padding(20)
+            
+        }
+        .animation(.bouncy, value: matchGame.cards)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .overlay(alignment: .topTrailing) {
+            Button("Reset", systemImage: "restart") {
+                matchGame.reset()
+            }
         }
         
       

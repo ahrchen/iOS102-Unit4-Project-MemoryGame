@@ -26,6 +26,10 @@ import Foundation
         cards.shuffle()
     }
     
+    func reset() {
+        cards = Card.mockedCards + Card.mockedCards
+        cards.shuffle()
+    }
     
     func choose(_ chosenIndex: Int) {
            if !cards[chosenIndex].isFaceUp,
