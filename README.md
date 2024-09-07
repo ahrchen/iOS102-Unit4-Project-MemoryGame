@@ -1,6 +1,6 @@
 # Project 4 - *Memory Game*
 
-Submitted by: **Raymodn Chen**
+Submitted by: **Raymond Chen**
 
 **Memory Game** is an game that ask users to find matching card pairs. The goal is to match every pair in the game. Remembering cards helps you find the pairs faster. 
 
@@ -20,7 +20,7 @@ The following **required** functionality is completed:
   - Implement logic to check if two tapped cards match.
   - If they match, both cards should either disappear.
   - If they don't match, they should return to the facedown position.
-- [ ] User can reset the game and start a new game via a button:
+- [X] User can reset the game and start a new game via a button:
   - Include a button that allows users to reset the game.
   - This button should shuffle the cards and reset any game-related state.
  
@@ -28,9 +28,9 @@ The following **optional** features are implemented:
 
 - [ ] User can select number of pairs to play with (at least 2 unique values like 2 and 4).
   * (Hint: user Picker)
-- [ ] App allows for user to scroll to see pairs out of view.
+- [X] App allows for user to scroll to see pairs out of view.
   * (Hint: Use a Scrollview)
-- [ ] Add any flavor you’d like to your UI with colored buttons or backgrounds, unique cards, etc. 
+- [X] Add any flavor you’d like to your UI with colored buttons or backgrounds, unique cards, etc. 
   * Enhance the visual appeal of the app with colored buttons, backgrounds, or unique card designs.
   * Consider using animations or transitions to make the user experience more engaging.
 
@@ -48,11 +48,11 @@ Here is a reminder on how to embed Loom videos on GitHub. Feel free to remove th
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+I may have over engineered my solution. The challenge here was the use of matchGame class and observable marco. However we could have done so by integrating the game logic into the ContentView. 
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright 2024 Raymond Chen
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
